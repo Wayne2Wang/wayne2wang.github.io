@@ -19,6 +19,11 @@ nav{
     padding-top: 22px;
     padding-bottom: 2px;
     align-items: baseline;
+    position: fixed ;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    background-color: white;
 }
 
 .nav-bar{
@@ -43,6 +48,11 @@ nav ul a:hover{
     background-color: rgb(201, 201, 206);
 
 }
+
+main {
+    margin-top: 100px; /* Add a top margin to avoid content overlay */
+}
+
 
 @media screen and (max-width: 778px){
     nav ul a{
