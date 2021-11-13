@@ -1,0 +1,60 @@
+html{
+    scroll-behavior: smooth;
+}
+
+nav ul{
+    list-style-type: none;
+      
+}
+    
+nav li{
+    display: inline;
+    padding-right: 20px;    
+}
+
+nav{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding-top: 22px;
+    padding-bottom: 2px;
+    align-items: baseline;
+}
+
+.nav-bar{
+    border-bottom: 1px gray solid;
+}
+
+nav .name{
+    font-family: 'Volkhov', serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+nav ul a{
+    font-family: Arial;
+    font-size: 18px;
+    color: black;
+}
+
+nav ul a:hover{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(201, 201, 206);
+
+}
+
+@media screen and (max-width: 778px){
+    nav ul a{
+        font-size: 18px;
+    }
+
+    nav{
+        flex-wrap: wrap;
+    }
+
+    .nav-links{
+        width: 100%;
+        text-align: center;
+    }
+} 
