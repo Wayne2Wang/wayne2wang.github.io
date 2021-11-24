@@ -4,6 +4,7 @@ html{
 
 nav ul{
     list-style-type: none;
+ 
       
 }
     
@@ -28,6 +29,8 @@ nav{
 
 .nav-bar{
     border-bottom: 1px gray solid;
+    padding-right: 30px;  
+    padding-left: 30px; 
 }
 
 nav .name{
@@ -36,13 +39,29 @@ nav .name{
     font-size: 32px;
 }
 
-nav ul a{
-    font-family: Arial;
+h1 {
+    font-weight: bold;
+    font-size: 24px; 
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.nav-links {
     font-size: 18px;
+}
+
+a{
+    font-family: Arial;
     color: black;
 }
 
-nav ul a:hover{
+.news a, .teaching a, .videos a{
+    font-family: Arial;
+    color: black;
+    font-style: italic;
+}
+
+a:hover{
     text-decoration: none;
     color: black;
     background-color: rgb(201, 201, 206);
@@ -53,8 +72,155 @@ main {
     margin-top: 100px; /* Add a top margin to avoid content overlay */
 }
 
+.about-left{
+    display: flex;
+    flex-direction: column;
+}
 
-@media screen and (max-width: 778px){
+.about-left ul{
+    list-style: none;
+}
+
+.about-left ul li{
+    display: inline;
+}
+
+.about-left ul li img{
+    width: 32px;
+    height: auto;
+}
+.about-left div{
+    padding-top: 6px;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+}
+
+#rotator{
+    width: 260px;
+    height: auto;
+}
+
+.about .about-left{
+    text-align: center;
+}
+
+.about .about-right{
+    padding-left: 40px;
+    padding-top: 10px;
+    text-align:left;
+    font-size: 18px;
+    /* font-family: 'Padauk', sans-serif; */
+}
+
+
+main{
+    margin: 100px;
+    padding: 1% 15%;
+    font-size: 18px;
+}
+
+.about-left img{
+    width: 260px;
+    height: auto;
+}
+
+.chinese_name {
+    font-family: 'Ma Shan Zheng', cursive;
+    font-size: 28px;
+    padding-bottom: 0px;
+}
+
+.footer{
+    text-align: center;
+    font-size: 16px;
+    color: #0000008A;
+}
+
+.projects img{
+    width: 280px;
+    height: 180px;
+    grid-column: 1/span 1;
+}
+
+.projects ul{
+    list-style: none;
+}
+
+.projects li{
+    padding-bottom: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+.proj-intro{
+    grid-column: 2/-1;
+    padding-left: 20px;
+    align-self: center;
+}
+
+.intro-title{
+    font-style: italic;
+}
+
+.about a, .projects a{
+    font-size:16px;
+}
+
+.proj-intro p, .proj-intro a{
+    margin-bottom: 8px;
+}
+
+.single-video img{
+    width: 260px;
+    height: 180px;
+    
+}
+
+.single-video img:hover{
+    transition:.1s;
+    box-shadow: 5px 5px 20px #888888;
+}
+
+.single-video p{
+    font-size: 16px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+
+
+.single-video{
+    margin-right: 24px;
+    margin-bottom: 8px;
+}
+
+.playlist{
+    padding-top: 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
+
+@media screen and (max-width: 1350px){
+    main{
+        margin: 60px;
+        padding: 0% 0%;
+        margin-top: 100px;
+        padding-left: 40px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1000px){
     nav ul a{
         font-size: 18px;
     }
@@ -67,4 +233,52 @@ main {
         width: 100%;
         text-align: center;
     }
+
+    main{
+        margin: 0px;
+        padding: 0px;
+        margin-top: 140px;
+        margin-left: 36px;
+        margin-right: 28px;    
+    
+    }
+    .about{
+        flex-direction:column;
+    }
+
+    .playlist{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 } 
+
+
+
+@media screen and (max-width: 800px){
+    .projects li{
+        padding-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .projects img{
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 10px;
+        padding-top: 28px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .playlist{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .playlist{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="Home">
 
   <head>
     <meta charset="utf-8">
@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" type="img/png" href="img/M.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+
     <title>Zilin Wang</title>
 
   </head>
@@ -25,47 +27,195 @@
 
                 <div class="nav-links">
                     <ul>
-                        <li><a href="#Home">Home</a></li>
-                        <li><a href="#News">News</a></li>
-                        <li><a href="#Publication">Publication</a></li>
-                        <li><a href="#Activity">Activity</a></li>
+                        <li><a href="index.html#Home">Home</a></li>
+                        <li><a href="index.html#News">News</a></li>
+                        <li><a href="index.html#Projects">Projects</a></li>
+                        <li><a href="index.html#Videos">Videos</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
 
     </header>
+    
 
     <main>
+        <div class="about">
+            <div class="about-left">
+                <div>
+                    <img src="img/wzl/wzl1.jpg" alt="my photo", id="rotator">
+                </div>
+                <div>
+                    <ul>
+                        <li class="chinese_name">
+                            王子霖<br>
+                        </li>
+                        <li>
+                            Email: zilinwan@umich.edu<br>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://github.com/wayne2wang">[GitHub]</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="file/zilinwang0917.pdf">[CV]</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-right">
+                <p>
+                    I am a first year Master's student in CSE at the University of Michigan, Ann Arbor. 
+                </p>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="news">
+            <h1>
+                What's New
+            </h1>
+            <ul>
+                <li>
+                    Oct 2021: I will start collaborating with the <a target="_blank" href="http://websites.umich.edu/~cgalbanlab/">C. Galban Lab</a>, working on computer vision tasks on medical images.
+                </li>
+                <li>
+                    Aug 2021: I started pursuing my Master's degree in CSE at University of Michigan, Ann Arbor.
+                </li>
+                <li> 
+                    May 2021: I graduated from the Ohio State University, Columbus.
+                </li>
+            </ul>
+        </div>
+
+        <hr/>
+
+        <div class="teaching" >
+            <h1>
+                Teaching
+            </h1>
+            <ul>
+                <li id="Projects">
+                    <a target="_blank" href="https://www.si.umich.edu/programs/courses/670">SI670 - Applied Machine Learning</a>: Instructional Aide, University of Michigan, Fall 2021
+                </li>
+                <li>
+                    <a target="_blank" href="https://coe-portal.cse.ohio-state.edu/pdf-exports/CSE/CSE-3521.pdf">CSE3521/5521 - Introduction to Artificial Intelligence</a>: Grader, the Ohio State University, Spring 2020
+                </li>
+                
+            </ul>
+        </div>
         
+
+        <hr/>
+
+        <div class="projects">
+            <h1>
+                Selected Projects
+            </h1>
+            <ul>
+                <li>
+                    <img src="img/fetus.jpg">
+                    <div class='proj-intro'>
+                        <p class="intro-title">Inspecting Ultrasound Image of Unborn Fetus by Deep Learning Integrated System</p>
+                        <p>
+                            Given ultrasound images of 41 different parts of unborn fetus (thalamus, lateral ventricles, etc.), we designed an algorithm to assess the quality of the images. The system was aimed for automating the training process of medical school students.
+                        </p>
+                        <a target="_blank" href="http://ddxx56.com:5000/">[website(credentials required)]</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/AOSLO.jpg">
+                    <div class="proj-intro">
+                        <p class="intro-title">
+                            Adaptive Optics-Scanning Laser Ophthalmoscopy Image Analysis Using Deep Learning
+                        </p>
+                        <p>
+                            Presented AI based solutions for identifying cones/rods from AO-SLO images, based on Unet/Unet++ and ordinary CNN. This system is able to augment doctors' diagnosis of retinal diseases, so that appropriate treatment can be given to patients more timely.
+                        </p>
+                        <a target="_blank" href="file/AO-SLO tech report.pdf">[report]</a>
+                        <a target="_blank" href="file/AO-SLO slides.pdf">[slides]</a>
+                    </div>
+                </li>
+                
+                <li>
+                    <img src="img/5523.jpg">
+                    <div class="proj-intro">
+                        <p class="intro-title">
+                            Verifying the Learnability of Bounded-Convex-Lipschitz Problem
+                        </p>
+                        <p>
+                            Given two scenarios of different domain and feature space, implemented stochastic gradient descent algorithm for logistic regression. Analyzed the M-bound and ρ-Lipschitz of each scenarios, and proved the estimate of expected excess risk is up bounded.
+                        </p>
+                        <a target="_blank" href="https://github.com/Wayne2Wang/CSE5523-Final-Project">[code]</a>
+                        <a target="_blank" href="file/CSE5523_Final_Project.pdf">[report]</a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/mask.gif">
+                    <div class="proj-intro">
+                        <p class="intro-title">
+                            Mask Classifier
+                        </p>
+                        <p>
+                            We developed a real-time application that tells whether people in the video are wearing masks correctly. The core neural network that we designed is lighter than the popular pretrained MobileNetv2, while achieving similar accuracy and more robust real-time performance.
+                        </p>
+                        <a target="_blank" href="https://github.com/jrajasekera/CSE5526_Final_Project">[code]</a>
+                        <a target="_blank" href="file/mask.pdf">[slides]</a>
+                        <a target="_blank" href="https://drive.google.com/file/d/1hzbyGxOKQGEySxnqqM4TFhruqX6nkIRm/view?usp=sharin
+                        g">[video]</a>
+                    </div>
+                    
+                </li>
+
+            </ul>
+
+        </div>
+
+        <hr id="Videos"/>
+
+        <div class="videos">
+            <h1>
+                Videos
+            </h1>
+            <p>
+                Click <a target="_blank" href="videos.html">here</a> for more videos.
+            </p>
+            <p style="font-style: italic;">Under Construction</p>
+            <!-- <div class="playlist">
+                <div class="single-video">
+                    <a target="_blank" href="https://www.google.com/"><img src="img/selfie.jpg"></a>
+                    <p>this is me playing basketballthis is me playing basketballthis i</p>
+                </div>
+                
+                
+                
+            </div> -->
+
+        </div>
 
         
     </main>
 
+
+    <script type="text/javascript">
+        (function() {
+            var rotator = document.getElementById('rotator'), //get the element
+                dir = 'img/wzl/wzl',                          //images folder
+                delayInSeconds = 1,                           //delay in seconds
+                num = 2,                                      //start number
+                len = 5;                                      //limit
+            setInterval(function(){                           //interval changer
+                rotator.src = dir + num+'.jpg';               //change picture
+                num = (num === len) ? 1 : ++num;              //reset if last image reached
+    }, delayInSeconds * 5000);
+}());
+    </script>
   
-  <footer id="footer">
-        <div class="copy">
-            <a>Copyright © Zilin Wang 2021</a>
-        </div>
-        <!-- <div class="social-media">
-            <ul class="media-list">
-                <li class="inline-item">
-                    <a target="_blank" href="https://github.com/Xinyue-LIi">
-                        <img src="img/github_icon.png" alt="github icon">
-                    </a>
-                </li>
-                <li class="inline-item">
-                    <a target="_blank" href="https://www.linkedin.com/in/xinyue-liii/">
-                        <img src="img/linkedin_icon.png" alt="linkedin icon">
-                    </a>
-                </li>
-                <li class="inline-item">
-                    <a target="_blank" href="https://www.instagram.com/becky__li/">
-                        <img src="img/instagram_icon.png" alt="instagram icon">
-                    </a>
-                </li>
-            </ul>
-        </div> -->
+
+
+  <footer class="footer">
+        Copyright © Zilin Wang 2021
   </footer>
   
   </body>
