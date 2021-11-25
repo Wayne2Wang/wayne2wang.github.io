@@ -55,7 +55,7 @@ a{
     color: black;
 }
 
-.news a, .teaching a, .videos a{
+.news a, .teaching a, .videos a, .about-right a{
     font-family: Arial;
     color: black;
     font-style: italic;
@@ -111,7 +111,8 @@ main {
     padding-left: 40px;
     padding-top: 10px;
     text-align:left;
-    font-size: 18px;
+    font-size: 20px;
+    align-self: center;
     /* font-family: 'Padauk', sans-serif; */
 }
 
@@ -166,7 +167,7 @@ main{
     font-style: italic;
 }
 
-.about a, .projects a{
+.about-left a, .projects a{
     font-size:16px;
 }
 
