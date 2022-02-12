@@ -146,6 +146,11 @@ main{
     grid-column: 1/span 1;
 }
 
+#av img{
+    width: 180px;
+    height: 180px;
+}
+
 .projects ul{
     list-style: none;
 }
