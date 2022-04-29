@@ -28,8 +28,8 @@
                 <div class="nav-links">
                     <ul>
                         <li><a href="index.html#Home">Home</a></li>
+                        <li><a href="index.html#Research">Research</a></li>
                         <li><a href="index.html#Projects">Projects</a></li>
-                        <li><a href="index.html#Writings">Writings</a></li>
                         <li><a href="index.html#Misc">Misc</a></li>
                     </ul>
                 </div>
@@ -67,7 +67,7 @@
                     I am a first year Master's student in CSE at the University of Michigan, Ann Arbor. 
                     I'm broadly interested in deep learning and computer vision, particularly their applications in healthcare. 
                     I’m excited to find out how state-of-the-art algorithms can aid doctors diagonse fatal diseases in the early stages, especially when a large amount of formatted electronic medical data is available. 
-                    In the meantime, I'm also interested in tackling problems under self/weakly-supervised settings or with supervision from another modality.
+                    In the meantime, I'm also interested in designing deep learning models that are efficient in terms of computation and memory consumption.
                 </p>
                 <p>
                     Previously, I graduated Summa Cum Laude from the Ohio State University majoring in CSE (AI track). 
@@ -86,13 +86,16 @@
             </h1>
             <ul>
                 <li>
-                    Nov 2021: I started working with <a target="_blank" href="http://websites.umich.edu/~cgalbanlab/">C. Galban Lab</a>, working on computer vision tasks on medical images.
+                    April 2022: Will be joining <a target="_blank" href="https://www.gene.com/">Genentech</a>'s PHC(Personalized Healthcare) imaging group as an intern for the upcoming summer.
                 </li>
                 <li>
-                    Aug 2021: I started pursuing my Master's degree in CSE at University of Michigan, Ann Arbor.
+                    Nov 2021: Started working with <a target="_blank" href="http://websites.umich.edu/~cgalbanlab/">C. Galban Lab</a>, mainly focusing on 3D medical image segmentation.
+                </li>
+                <li>
+                    Aug 2021: Started pursuing my Master's degree in CSE at University of Michigan, Ann Arbor.
                 </li>
                 <li> 
-                    May 2021: I graduated from the Ohio State University, Columbus.
+                    May 2021: Graduated from the Ohio State University, Columbus.
                 </li>
                 <li> 
                     Mar 2021: CITI program certification: Responsible Conduct of Research(Biomedical)<a target="_blank" href="file/RCR.pdf">[RCR]</a>, Human Subjects Protection(Biomedical)<a target="_blank" href="file/HSP.pdf">[HSP]</a>.
@@ -107,7 +110,7 @@
                 Teaching
             </h1>
             <ul>
-                <li id="Projects">
+                <li id="Research">
                     <a target="_blank" href="https://www.si.umich.edu/programs/courses/670">SI670 - Applied Machine Learning</a>: Instructional Aide, University of Michigan, Fall 2021
                 </li>
                 <li>
@@ -122,7 +125,7 @@
 
         <div class="projects">
             <h1>
-                Selected Projects
+                Research
             </h1>
             <ul>
                 <li>
@@ -134,29 +137,23 @@
                         </p>
                     </div>
                 </li>
+
                 <li>
-                    <img src="img/fetus.jpg">
-                    <div class='proj-intro'>
-                        <p class="intro-title">Inspecting Ultrasound Image of Unborn Fetus by Deep Learning Integrated System</p>
-                        <p>
-                            Given ultrasound images of 41 different parts of unborn fetus (thalamus, lateral ventricles, etc.), we designed an algorithm to assess the quality of the images. The system was aimed for automating the training process of medical school students.
-                        </p>
-                        <a target="_blank" href="http://ddxx56.com:5000/">[website(credentials required)]</a>
-                    </div>
-                </li>
-                <li>
-                    <img src="img/AOSLO.jpg">
-                    <div class="proj-intro">
+                    <img src="img/kd_diagram.png">
+                    <div class="proj-intro" >
                         <p class="intro-title">
-                            Adaptive Optics-Scanning Laser Ophthalmoscopy Image Analysis Using Deep Learning
+                            Transferring Inductive Bias through Leveled Knowledge Distillation
                         </p>
                         <p>
-                            Presented AI based solutions for identifying cones/rods from AO-SLO images, based on Unet/Unet++ and ordinary CNN. This system is able to augment doctors' diagnosis of retinal diseases, so that appropriate treatment can be given to patients more timely.
+                            In this projecct, we show that CNN's tranlational equivariance inductive bias can be transfered to a simple MLP through knowledge distillation.
+                            Moreover, we propose two new methods to further improve the transfer of inductive bias: training with a weaker teacher and applying feature matching.
                         </p>
-                        <a target="_blank" href="file/AO-SLO tech report.pdf">[report]</a>
-                        <a target="_blank" href="file/AO-SLO slides.pdf">[slides]</a>
+                        <a target="_blank" href="https://github.com/Wayne2Wang/Knowledge-Distillation">[code]</a>
+                        <a target="_blank" href="file/KD_report.pdf" >[report]</a>
+                        <a target="_blank" href="file/KD_poster.pdf">[poster]</a>
                     </div>
                 </li>
+
                 <li>
                     <img src="img/wrench_est.gif">
                     <div class='proj-intro'>
@@ -169,9 +166,34 @@
                         <a target="_blank" href="file/wrench_est_slides.pdf">[slides]</a>
                     </div>
                 </li>
+
+                <li>
+                    <img src="img/fetus1.jpg">
+                    <div class='proj-intro'>
+                        <p class="intro-title">Inspecting Ultrasound Image of Unborn Fetus by Deep Learning Integrated System</p>
+                        <p>
+                            Given ultrasound images of 41 different parts of unborn fetus (thalamus, lateral ventricles, etc.), we designed an algorithm to assess the quality of the images. The system was aimed for automating the training process of medical school students.
+                        </p>
+                        <a target="_blank" href="http://ddxx56.com:5000/">[website(credentials required)]</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/AOSLO.png">
+                    <div class="proj-intro">
+                        <p class="intro-title">
+                            Adaptive Optics-Scanning Laser Ophthalmoscopy Image Analysis Using Deep Learning
+                        </p>
+                        <p>
+                            Presented AI based solutions for identifying cones/rods from AO-SLO images, based on Unet/Unet++ and ordinary CNN. This system is able to augment doctors' diagnosis of retinal diseases, so that appropriate treatment can be given to patients more timely.
+                        </p>
+                        <a target="_blank" href="file/AO-SLO tech report.pdf">[report]</a>
+                        <a target="_blank" href="file/AO-SLO slides.pdf">[slides]</a>
+                    </div>
+                </li>
+
                 <li>
                     <img src="img/5523.jpg">
-                    <div class="proj-intro">
+                    <div class="proj-intro" >
                         <p class="intro-title">
                             Verifying the Learnability of Bounded-Convex-Lipschitz Problem
                         </p>
@@ -179,7 +201,59 @@
                             Given two scenarios of different domain and feature space, implemented stochastic gradient descent algorithm for logistic regression. Analyzed the M-bound and ρ-Lipschitz of each scenarios, and proved the estimate of expected excess risk is up bounded.
                         </p>
                         <a target="_blank" href="https://github.com/Wayne2Wang/CSE5523-Final-Project">[code]</a>
-                        <a target="_blank" href="file/CSE5523_Final_Project.pdf">[report]</a>
+                        <a target="_blank" href="file/CSE5523_Final_Project.pdf" id="Projects">[report]</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <hr />
+
+        <div class="projects">
+            <h1>
+                Side / Course Projects
+            </h1>
+            <ul>
+                <li>
+                    <img src="img/pytorch.png">
+                    <div class="proj-intro">
+                        <p class="intro-title">
+                            Pytorch-minModels
+                        </p>
+                        <p>
+                            This is a constantly updated codebase of minimum pytorch implementation for deep learning models. 
+                            The purpose of this project is to demonstrate the essence of deep learning models by as few code as possible.
+                            Please feel free to drop me an email if you'd like me to implement a specific model :)
+                        </p>
+                        <a target="_blank" href="https://github.com/Wayne2Wang/Pytorch-minModel">[code]</a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/nerf_lego.gif">
+                    <div class="proj-intro">
+                        <p class="intro-title">
+                            Simplified Re-implementation of NeRF
+                        </p>
+                        <p>
+                            We re-implement the NeRF model from Mildenhall et al. ECCV 2020. To reduce computation, we used lower resolution images, a shallower MLP, shorter training schedules, and without hiearchical sampling. With these simplifications, our model can be trained within 7 minutes.
+                        </p>
+                        <a target="_blank" href="https://drive.google.com/file/d/1onhQy_GA_N7AbE3tzc5uHh346zx1URwR/view?usp=sharing">[notebook]</a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/EECS586_matrix_multiply.png">
+                    <div class="proj-intro">
+                        <p class="intro-title">
+                            Multiplying a sequence of matrices
+                        </p>
+                        <p>
+                            Implementation of 3 dynamic programming algorithms for determining the optimal order of multiplying a sequence of matrices. The first one is a naive baseline of  O(n^3)  time complexity. The latter two comes from F. Frances Yao, 1982. They have  O(c^n)  and  O(n^2)  time complexity respectively.
+                        </p>
+                        <a target="_blank" href="https://drive.google.com/file/d/1_6GaGMiClL7OeNBVSE8xuny9hR9FoLbu/view?usp=sharing">[notebook]</a>
+                        <a target="_blank" href="file/EECS586_slides.pdf">[slides]</a>
                     </div>
                 </li>
 
@@ -199,11 +273,10 @@
                     </div>
                     
                 </li>
-
             </ul>
         </div>
 
-        <hr id="Writings"/>
+        <!-- <hr id="Writings"/>
 
         <div class="videos">
             <h1>
@@ -213,15 +286,15 @@
                 Here are some writing samples from me. They include paper reviews/summaries and some perspectives of mine. I like explaining things to myself by precise words, and I figured why not gather them in one place. Note that these contents are sorely my own and do not express the standing points of my employers/sponsors.
             </p>
             <p style="font-style: italic;">Under Construction</p>
-            <!-- <div class="playlist">
+            <div class="playlist">
                 <div class="single-video">
                     <a target="_blank" href="https://youtu.be/P5KmsPmMJDs"><img src="https://i.ytimg.com/vi/Ilg3gGewQ5U/maxresdefault.jpg"></a>
                     <p>Backpropagation</p>
                 </div>   
             </div>
-            <P>Click <a target="_blank" href="videos.html">here</a> for more videos.</P> -->
+            <P>Click <a target="_blank" href="videos.html">here</a> for more videos.</P>
 
-        </div>
+        </div> -->
 
 
         <hr/>
