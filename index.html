@@ -53,7 +53,10 @@
                         <li>
                             Email: zilinwan{at}umich.edu<br>
                         </li>
-
+                        <li>
+                            <a target="_blank" href="file/Zilin Wang resume.pdf">[CV]</a>
+                        </li>
+                        <li>
                             <a target="_blank" href="https://github.com/wayne2wang">[GitHub]</a>
                         </li>
                         <li>
@@ -134,7 +137,9 @@
                 Research
             </h1>
             <ul>
-
+                <h2>
+                    Medical Image Analysis
+                </h2>
                 <li>
                     <img src="img/av.gif">
                     <div class='proj-intro'>
@@ -151,8 +156,9 @@
                     <div class='proj-intro'>
                         <p class="intro-title">Inspecting Ultrasound Image of Unborn Fetus by Deep Learning Integrated System</p>
                         <p>
-                            Given ultrasound images of 41 different parts of unborn fetus (thalamus, lateral ventricles, etc.), we design and train a fine-grained classifier and object detectors (yolov5) to assess the quality of the images. 
-                            The system was deployed in hospitals in Shenzhen to automate the training process of medical students.
+                            Given ultrasound images of 41 different parts of unborn fetus, we design and train a fine-grained classifier and object detectors (yolov5). 
+                            We proposed a post-processing step that enables spatial reasoning to accurately assess the imaging quality.
+                            The system was deployed in hospitals in Shenzhen.
                         </p>
                         <a target="_blank" href="http://ddxx56.com:5000/">[website(credentials required)]</a>
                     </div>
@@ -168,18 +174,70 @@
                             For optimal performance, we experiment with different variants of semantic segmentation techniques, and also adopted object detection techniques.
                         </p>
                         <a target="_blank" href="file/AO-SLO tech report.pdf">[report]</a>
-                        <a target="_blank" href="file/AO-SLO slides.pdf" id="Projects">[slides]</a>
+                        <a target="_blank" href="file/AO-SLO slides.pdf">[slides]</a>
+                    </div>
+                </li>
+            </ul>
+
+            <ul>
+                <h2>
+                    Computer Vision / Machine Learning
+                </h2>
+                <li>
+                    <img src="img/kd_diagram.png">
+                    <div class="proj-intro" >
+                        <p class="intro-title">
+                            Transferring Inductive Bias through Leveled Knowledge Distillation (EECS545, Winter2022)
+                        </p>
+                        <p>
+                            In this projecct, we demonstrate that CNN's translational equivariance inductive bias can be partially picked up by a simple MLP through knowledge distillation.
+                            Moreover, we propose two new methods to further improve the transfer of inductive bias.
+                        </p>
+                        <a target="_blank" href="https://github.com/Wayne2Wang/Knowledge-Distillation">[code]</a>
+                        <a target="_blank" href="file/KD_report.pdf" >[report]</a>
+                        <a target="_blank" href="file/KD_poster.pdf">[poster]</a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/wrench_est.gif">
+                    <div class='proj-intro'>
+                        <p class="intro-title">External Wrench Recovery Using Visual-Tactile Sensors for Robotics Manipulation (EECS542, Fall2021)</p>
+                        <p>
+                            We present an algorithm to estimate the external forces applied to a robotic manipulator equipped with visual-tactile sensors. 
+                            Our model combines correspondence matching, classical rendering techniques, and deep learning. 
+                            Data is collected from the interaction of the robot with ground truth force data measured from an external sensor.
+                        </p>
+                        <a target="_blank" href="https://github.com/mr-mikmik/bubble_force_estimation">[code]</a>
+                        <a target="_blank" href="file/wrench_est.pdf">[report]</a>
+                        <a target="_blank" href="file/wrench_est_slides.pdf">[slides]</a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/5523.jpg">
+                    <div class="proj-intro" >
+                        <p class="intro-title">
+                            Verifying the Learnability of Bounded-Convex-Lipschitz Problem (CSE5523, Autumn2020)
+                        </p>
+                        <p>
+                            Given two scenarios of different domain and feature space, we implement stochastic gradient descent algorithm for logistic regression. 
+                            We analyze the M-bound and ρ-Lipschitz of each scenarios, and proved the estimate of expected excess risk is up bounded.
+                        </p>
+                        <a target="_blank" href="https://github.com/Wayne2Wang/CSE5523-Final-Project">[code]</a>
+                        <a target="_blank" href="file/CSE5523_Final_Project.pdf" id="Projects">[report]</a>
                     </div>
                 </li>
 
             </ul>
+
         </div>
 
         <hr />
 
         <div class="projects">
             <h1>
-                Side / Course Projects
+                Side Projects
             </h1>
             <ul>
                 <li>
@@ -209,21 +267,7 @@
                         <!-- <a target="_blank" href="https://drive.google.com/file/d/1onhQy_GA_N7AbE3tzc5uHh346zx1URwR/view?usp=sharing">[notebook]</a> -->
                     </div>
                 </li>
-                <li>
-                    <img src="img/kd_diagram.png">
-                    <div class="proj-intro" >
-                        <p class="intro-title">
-                            Transferring Inductive Bias through Leveled Knowledge Distillation (EECS545, Winter2022)
-                        </p>
-                        <p>
-                            In this projecct, we show that CNN's translational equivariance inductive bias can be partially picked up by a simple MLP through knowledge distillation.
-                            Moreover, we propose two new methods to further improve the transfer of inductive bias.
-                        </p>
-                        <a target="_blank" href="https://github.com/Wayne2Wang/Knowledge-Distillation">[code]</a>
-                        <a target="_blank" href="file/KD_report.pdf" >[report]</a>
-                        <a target="_blank" href="file/KD_poster.pdf">[poster]</a>
-                    </div>
-                </li>
+                
 
                 <li>
                     <img src="img/EECS586_matrix_multiply.png">
@@ -236,36 +280,6 @@
                         </p>
                         <a target="_blank" href="https://drive.google.com/file/d/1_6GaGMiClL7OeNBVSE8xuny9hR9FoLbu/view?usp=sharing">[notebook]</a>
                         <a target="_blank" href="file/EECS586_slides.pdf">[slides]</a>
-                    </div>
-                </li>
-
-                <li>
-                    <img src="img/wrench_est.gif">
-                    <div class='proj-intro'>
-                        <p class="intro-title">External Wrench Recovery Using Visual-Tactile Sensors for Robotics Manipulation (EECS542, Fall2021)</p>
-                        <p>
-                            We present an algorithm to estimate the external forces applied to a robotic manipulator equipped with visual-tactile sensors. 
-                            Our model combines correspondence matching, classical rendering techniques, and deep learning. 
-                            Data is collected from the interaction of the robot with ground truth force data measured from an external sensor.
-                        </p>
-                        <a target="_blank" href="https://github.com/mr-mikmik/bubble_force_estimation">[code]</a>
-                        <a target="_blank" href="file/wrench_est.pdf">[report]</a>
-                        <a target="_blank" href="file/wrench_est_slides.pdf">[slides]</a>
-                    </div>
-                </li>
-
-                <li>
-                    <img src="img/5523.jpg">
-                    <div class="proj-intro" >
-                        <p class="intro-title">
-                            Verifying the Learnability of Bounded-Convex-Lipschitz Problem (CSE5523, Autumn2022)
-                        </p>
-                        <p>
-                            Given two scenarios of different domain and feature space, we implement stochastic gradient descent algorithm for logistic regression. 
-                            We analyze the M-bound and ρ-Lipschitz of each scenarios, and proved the estimate of expected excess risk is up bounded.
-                        </p>
-                        <a target="_blank" href="https://github.com/Wayne2Wang/CSE5523-Final-Project">[code]</a>
-                        <a target="_blank" href="file/CSE5523_Final_Project.pdf" >[report]</a>
                     </div>
                 </li>
 

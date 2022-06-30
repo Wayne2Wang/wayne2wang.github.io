@@ -46,6 +46,13 @@ h1 {
     padding-top: 20px;
 }
 
+h2 {
+    /* font-weight: bold; */
+    font-size: 18px; 
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
 .nav-links {
     font-size: 18px;
 }
