@@ -217,9 +217,9 @@ main{
 
 
 
-@media screen and (max-width: 1350px){
+@media screen and (max-width: 1700px){
     main{
-        margin: 60px;
+        margin: 200px;
         padding: 0% 0%;
         margin-top: 100px;
         padding-left: 40px;
@@ -228,9 +228,7 @@ main{
 }
 
 
-
-
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1460px){
     nav ul a{
         font-size: 18px;
     }
@@ -246,11 +244,11 @@ main{
 
     main{
         margin: 0px;
-        padding: 0px;
+        padding: 100px;
+        padding-top : 0;
         margin-top: 140px;
         margin-left: 36px;
-        margin-right: 28px;    
-    
+        margin-right: 28px;   
     }
     .about{
         flex-direction:column;
@@ -263,7 +261,7 @@ main{
 
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1100px){
     .projects li{
         padding-bottom: 24px;
         display: flex;
@@ -279,7 +277,16 @@ main{
     }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 900px){
+    main{
+        margin: 0px;
+        margin-top: 140px;
+        padding: 40px; 
+        padding-top : 0px;
+    }
+}
+
+/* @media screen and (max-width: 700px){
     .playlist{
         grid-template-columns: 1fr 1fr;
     }
@@ -291,4 +298,4 @@ main{
         flex-direction: column;
         text-align: center;
     }
-}
+} */
