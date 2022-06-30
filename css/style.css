@@ -228,7 +228,7 @@ main{
 }
 
 
-@media screen and (max-width: 1460px){
+@media screen and (max-width: 1440px){
     nav ul a{
         font-size: 18px;
     }
