@@ -75,17 +75,16 @@
             <div class="about-right">
                 <p>
                     I am a Master's student in CSE at the University of Michigan, Ann Arbor. 
-                    I am broadly interested in deep learning and computer vision, particularly their applications in medical image analysis. 
-                    I am excited to find out how state-of-the-art algorithms can aid doctors diagonse fatal diseases in the early stages. 
-                    In the meantime, I am also interested in designing efficient deep learning models (in terms of memory and computation) and training deep learning models under semi-supervised settings.
+                    I am broadly interested in deep learning and computer vision, particularly training models under limited supervision and designing efficient deep learning models(in terms of memory and computation). 
+                    In the meantime, I am excited to find out how state-of-the-art algorithms can aid doctors diagonse fatal diseases in the early stages. 
                 </p>
                 <p>
-                    I am currently also a summer intern at <a target="_blank" href="https://www.gene.com/">Genentech/Roche</a> and a research assistant at <a target="_blank" href="http://websites.umich.edu/~cgalbanlab/">C. Galban Lab</a>, Michigan Medicine, where I work on analyzing retinal OCTA images and pulmonary 3D CT scans using deep learning.
+                    I am currently working with Prof. <a target="_blank" href="https://www1.icsi.berkeley.edu/~stellayu/">Stella Yu</a> on unsupervised object discovery.
+                    I am also a research assistant at <a target="_blank" href="http://websites.umich.edu/~cgalbanlab/">C. Galban Lab</a>, Michigan Medicine, where I work on pulmonary 3D CT scan segmentation using deep learning.
+                    Before that I was a summer intern at <a target="_blank" href="https://www.gene.com/">Genentech</a>, working on OCT-A image segmentation.
                 </p>
                 <p>
-                    I previously graduated Summa Cum Laude from the Ohio State University majoring in CSE (AI track). 
-                    During the time, I was fortunate to build my solid foundation in math and machine learning that helped me a lot in later study. 
-                    <!-- Before that, I interned at <a target="_blank" href="https://www.infopass.cn/index.html">Infopass Technology</a> in Changsha, where I worked on the passenger flow control system(based on cameras), which was later deployed to subway systems in multiple major cities. -->
+                    I previously graduated Summa Cum Laude from the Ohio State University majoring in CSE. 
                 </p>
             </div>
         </div>
@@ -148,8 +147,8 @@
                     <div class='proj-intro'>
                         <p class="intro-title">Pulmonary Artery-Vein Segmentation in 3D Computed Tomography Images</p>
                         <p>
-                            Given 3D Computed Tomography images of lungs, we extract vessels and distinguish between two types of vessels(arteries and veins) that are visually similar to each other. 
-                            We propose a novel neural network that can efficiently process CT scans of resolution ~500^3 and is able to be trained with partially labeled data.
+                            We propose iSparseUnet, a 3D Unet-like semantic segmentation model that is able to segment tubular structures from pulmonary CT scans of ∼ 33 million pixels in
+                            one forward pass within 0.7 second, while achieving a Dice score of ∼ 0.84 on our validation set.
                         </p>
                         <a>[More to come]</a>
                     </div>
@@ -159,9 +158,8 @@
                     <div class='proj-intro'>
                         <p class="intro-title">Inspecting Ultrasound Image of Unborn Fetus by Deep Learning Integrated System</p>
                         <p>
-                            Given ultrasound images of 41 different parts of unborn fetus, we design and train a fine-grained classifier and object detectors (yolov5). 
-                            We proposed a post-processing step that enables spatial reasoning to accurately assess the imaging quality.
-                            The system was deployed in hospitals in Shenzhen.
+                            We design and train a fined-grained image classifier and a object detector(yolov5) to robustly detect 41 different
+body parts of unborn fetus from ultrasound images. A website is deployed for doctors and ultrasound operators to directly interact with the models.
                         </p>
                         <a target="_blank" href="http://ddxx56.com:5000/">[website(credentials required)]</a>
                     </div>
@@ -173,8 +171,8 @@
                             Adaptive Optics-Scanning Laser Ophthalmoscopy Image Analysis Using Deep Learning
                         </p>
                         <p>
-                            Given retinal AO-SLO images, we present AI based solutions to detect cones/rods from them.
-                            For optimal performance, we experiment with different variants of semantic segmentation techniques, and also adopted object detection techniques.
+                            We present both semantic segmentation and object detection techniques to localize and distinguish between two
+types of photoreceptors from AO-SLO images of human retina. This project later evolved into the <a target="_blank" href="https://opg.optica.org/boe/fulltext.cfm?uri=boe-13-10-5082&id=498617">RC-UPerNet</a>.
                         </p>
                         <a target="_blank" href="file/AO-SLO tech report.pdf">[report]</a>
                         <a target="_blank" href="file/AO-SLO slides.pdf">[slides]</a>
@@ -190,11 +188,12 @@
                     <img src="img/kd_diagram.png">
                     <div class="proj-intro" >
                         <p class="intro-title">
-                            Transferring Inductive Bias through Leveled Knowledge Distillation (EECS545, Winter2022)
+                            Transferring Inductive Bias through Leveled Knowledge Distillation
                         </p>
                         <p>
-                            In this projecct, we demonstrate that CNN's translational equivariance inductive bias can be partially picked up by a simple MLP through knowledge distillation.
-                            Moreover, we propose two new methods to further improve the transfer of inductive bias.
+                            We demonstrat that, by distilling knowledge from a convolutional neural networks(CNNs) teacher, a multi-layer
+                            perceptron(MLP) can learn a set of weights that mimics CNNs’ translational equivariance. We further propose two approaches to improve the student’s performance and robustness.
+                            
                         </p>
                         <a target="_blank" href="file/KD_report.pdf" >[report]</a>
                         <a target="_blank" href="file/KD_poster.pdf">[poster]</a>
@@ -204,11 +203,10 @@
                 <li>
                     <img src="img/wrench_est.gif">
                     <div class='proj-intro'>
-                        <p class="intro-title">External Wrench Recovery Using Visual-Tactile Sensors for Robotics Manipulation (EECS542, Fall2021)</p>
+                        <p class="intro-title">External Wrench Recovery Using Visual-Tactile Sensors for Robotics Manipulation</p>
                         <p>
-                            We present an algorithm to estimate the external forces applied to a robotic manipulator equipped with visual-tactile sensors. 
-                            Our model combines correspondence matching, classical rendering techniques, and deep learning. 
-                            Data is collected from the interaction of the robot with ground truth force data measured from an external sensor.
+                            We introduce a dataset for external wrench recoverey from visual-tactile sensor images, and an algorithm to estimate the external forces and torques applied to a robotic manipulator equipped with
+                            visual-tactile sensors that combines correspondence matching, classical rendering techniques, and PointNet.
                         </p>
                         <a target="_blank" href="file/wrench_est.pdf">[report]</a>
                         <a target="_blank" href="file/wrench_est_slides.pdf">[slides]</a>
@@ -219,7 +217,7 @@
                     <img src="img/5523.jpg">
                     <div class="proj-intro" >
                         <p class="intro-title">
-                            Verifying the Learnability of Bounded-Convex-Lipschitz Problem (CSE5523, Autumn2020)
+                            Verifying the Learnability of Bounded-Convex-Lipschitz Problem
                         </p>
                         <p id="Projects">
                             Given two scenarios of different domain and feature space, we implement stochastic gradient descent algorithm for logistic regression. 
@@ -259,7 +257,7 @@
                     <img src="img/nerf_lego.gif">
                     <div class="proj-intro">
                         <p class="intro-title">
-                            Simplified Re-implementation of NeRF (EECS598: DL4CV, Winter2022)
+                            Simplified Re-implementation of NeRF
                         </p>
                         <p>
                             We re-implement the NeRF model from Mildenhall et al. ECCV 2020. To reduce computation, we used lower resolution images, a shallower MLP, shorter training schedules, and without hiearchical sampling. With these simplifications, our model can be trained within 7 minutes.
@@ -272,7 +270,7 @@
                     <img src="img/EECS586_matrix_multiply.png">
                     <div class="proj-intro">
                         <p class="intro-title">
-                            Multiplying a sequence of matrices (EECS586, Winter2022)
+                            Multiplying a sequence of matrices
                         </p>
                         <p>
                             Implementation of 2 dynamic programming algorithms for determining the optimal order of multiplying a sequence of matrices introduced by F. Frances Yao's, 1982. They have  O(c^n)  and  O(n^2)  time complexity respectively.
@@ -286,7 +284,7 @@
                     <img src="img/mask.gif">
                     <div class="proj-intro">
                         <p class="intro-title">
-                            Mask Classifier (EECS5526, Spring2021)
+                            Mask Classifier
                         </p>
                         <p>
                             We develop a real-time application that tells whether people in the video are wearing masks correctly. 
