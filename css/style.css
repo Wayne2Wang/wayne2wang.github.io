@@ -75,11 +75,6 @@ a:hover{
 
 }
 
-main {
-    margin-top: 100px; /* Add a top margin to avoid content overlay */
-    margin-bottom: 50px;
-}
-
 .about-left{
     display: flex;
     flex-direction: column;
@@ -126,7 +121,7 @@ main {
 
 
 main{
-    margin: 100px;
+    margin: 100px 100px 50px 100px;
     padding: 1% 15%;
     font-size: 18px;
 }
@@ -220,9 +215,8 @@ main{
 
 @media screen and (max-width: 1700px){
     main{
-        margin: 200px;
+        margin: 100px 200px 50px 200px;
         padding: 0% 0%;
-        margin-top: 100px;
         padding-left: 40px;
     }
 
@@ -244,12 +238,9 @@ main{
     }
 
     main{
-        margin: 0px;
+        margin: 140px 28px 50px 36px;
         padding: 100px;
         padding-top : 0;
-        margin-top: 140px;
-        margin-left: 36px;
-        margin-right: 28px;   
     }
     .about{
         flex-direction:column;
@@ -280,8 +271,7 @@ main{
 
 @media screen and (max-width: 900px){
     main{
-        margin: 0px;
-        margin-top: 140px;
+        margin: 140px 0px 50px 0px;
         padding: 40px; 
         padding-top : 0px;
     }
