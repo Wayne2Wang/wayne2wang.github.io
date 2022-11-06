@@ -266,6 +266,10 @@ main{
         padding-bottom: 10px;
         padding-top: 28px;
     }
+
+    .proj-intro, .about .about-right {
+        padding-left: 0;
+    }
 }
 
 @media screen and (max-width: 900px){
