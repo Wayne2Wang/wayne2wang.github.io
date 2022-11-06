@@ -77,6 +77,7 @@ a:hover{
 
 main {
     margin-top: 100px; /* Add a top margin to avoid content overlay */
+    margin-bottom: 50px;
 }
 
 .about-left{
