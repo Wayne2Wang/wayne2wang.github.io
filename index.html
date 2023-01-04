@@ -98,7 +98,7 @@
             </h1>
             <ul id="Research">
                 <li>
-                    <a target="_blank" href="https://docs.google.com/document/d/1UtgszAuvNpvsnzTwVSVrFGz39-efRzDQI82nkgKMfMA/edit?usp=sharing">EECS598 - Action and Perception</a>: Graduate Student Instructor, University of Michigan, Winter 2023
+                    <a target="_blank" href="https://docs.google.com/document/d/1DqUox67q5fPkTD1X0QSCSSOnyw34w1QH/edit?usp=sharing&ouid=101412833894955967723&rtpof=true&sd=true">EECS598 - Action and Perception</a>: Graduate Student Instructor, University of Michigan, Winter 2023
                 </li>
                 <li>
                     <a target="_blank" href="https://www.si.umich.edu/programs/courses/670">SI670 - Applied Machine Learning</a>: Instructional aide, University of Michigan, Fall 2021
@@ -123,8 +123,8 @@
                     <div class='proj-intro'>
                         <p class="intro-title">Pulmonary Artery-Vein Segmentation in 3D Computed Tomography Images</p>
                         <p>
-                            We propose iSparseUnet, a 3D Unet-like semantic segmentation model that is able to segment tubular structures from pulmonary CT scans of ∼ 33 million pixels in
-                            one forward pass within 0.7 second, while achieving a Dice score of ∼ 0.84 on our validation set.
+                            We propose iSparseUnet, a 3D Unet-like semantic segmentation model that is highly efficient when the positive class masks are sparse. 
+                            We benchmark the model on A/V segmentation, which demonstrated that our model only need 0.7 seconds and 16 GB of GPU memory to segment a CT scan of ~34 million voxels on a NVIDIA A40 while achieving SOTA performance.
                         </p>
                         <a>[More to come]</a>
                     </div>
@@ -135,8 +135,8 @@
                     <div class='proj-intro'>
                         <p class="intro-title">Machine Learning Based FAZ Segmentation in OCTA images [In submission]</p>
                         <p>
-                            We propose a multi-task learning algorithm for OCT-A image segmentation where the input images are from different domains. The best trained model achieved human-level 
-                            segmentation performance and only made mistakes on cases where even human experts do not have definite answers.
+                            We propose a multi-task learning algorithm for foveal avascular zone(FAZ) segmentation that learns to segment FAZs, FAZ boundaries, and vessels at the same time. 
+                            We demonstrate that the model could pick up meaningful domain knowledge and achieve near perfect segmentation performance.
                         </p>
                         <a id="Projects">[Paper]</a>
                         <a>[Poster]</a>
