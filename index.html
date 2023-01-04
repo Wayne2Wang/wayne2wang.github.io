@@ -33,7 +33,7 @@
                     <ul>
                         <li><a href="index.html#Home">Home</a></li>
                         <li><a href="index.html#Research">Research</a></li>
-                        <li><a href="index.html#Projects">Projects</a></li>
+                        <!-- <li><a href="index.html#Projects">Projects</a></li> -->
                         <li><a href="index.html#Misc">Misc</a></li>
                     </ul>
                 </div>
@@ -90,38 +90,16 @@
             </div>
         </div>
 
-        <hr/>
-
-        <div class="news">
-            <h1>
-                What's New
-            </h1>
-            <ul>
-                <li>
-                    April 2022: Will be joining Genentech's PHC(Personalized Healthcare) imaging group as an intern for the upcoming summer.
-                </li>
-                <li>
-                    Nov 2021: Started working with C. Galban lab, mainly focusing on 3D medical image segmentation.
-                </li>
-                <li>
-                    Aug 2021: Started pursuing my Master's degree in CSE at University of Michigan, Ann Arbor.
-                </li>
-                <li> 
-                    May 2021: Graduated from the Ohio State University, Columbus.
-                </li>
-                <li> 
-                    Mar 2021: CITI program certification: Responsible Conduct of Research(Biomedical)<a target="_blank" href="file/RCR.pdf">[RCR]</a>, Human Subjects Protection(Biomedical)<a target="_blank" href="file/HSP.pdf">[HSP]</a>.
-                </li>
-            </ul>
-        </div>
-
-        <hr/>
-
+        <hr />
+        
         <div class="teaching" >
             <h1>
                 Teaching
             </h1>
             <ul id="Research">
+                <li>
+                    <a target="_blank" href="https://docs.google.com/document/d/1UtgszAuvNpvsnzTwVSVrFGz39-efRzDQI82nkgKMfMA/edit?usp=sharing">EECS598 - Action and Perception</a>: Graduate Student Instructor, University of Michigan, Winter 2023
+                </li>
                 <li>
                     <a target="_blank" href="https://www.si.umich.edu/programs/courses/670">SI670 - Applied Machine Learning</a>: Instructional aide, University of Michigan, Fall 2021
                 </li>
@@ -131,7 +109,6 @@
                 
             </ul>
         </div>
-        
 
         <hr/>
 
@@ -173,106 +150,16 @@
 
         <hr />
 
-        <div class="projects">
-            <h1>
-                Side Projects
-            </h1>
-            <ul>
-                <li>
-                    <img src="img/pytorch.png">
-                    <div class="proj-intro">
-                        <p class="intro-title">
-                            Pytorch-minModels
-                        </p>
-                        <p>
-                            This is a constantly updated codebase of minimum pytorch implementation for deep learning models. 
-                            The purpose of this project is to demonstrate the essence of deep learning models by as few code as possible.
-                            Please feel free to drop me an email if you'd like me to implement a specific model :)
-                        </p>
-                        <a target="_blank" href="https://github.com/Wayne2Wang/Pytorch-minModel">[code]</a>
-                    </div>
-                </li>
-            
-                <li>
-                    <img src="img/kd_diagram.png">
-                    <div class="proj-intro" >
-                        <p class="intro-title">
-                            Transferring Inductive Bias through Leveled Knowledge Distillation
-                        </p>
-                        <p>
-                            We demonstrat that, by distilling knowledge from a convolutional neural networks(CNNs) teacher, a multi-layer
-                            perceptron(MLP) can learn a set of weights that mimics CNNs’ translational equivariance. We further propose two approaches to improve the student’s performance and robustness.
-                            
-                        </p>
-                        <a target="_blank" href="file/KD_report.pdf" >[report]</a>
-                        <a target="_blank" href="file/KD_poster.pdf">[poster]</a>
-                    </div>
-                </li>
-
-                <li>
-                    <img src="img/wrench_est.gif">
-                    <div class='proj-intro'>
-                        <p class="intro-title">External Wrench Recovery Using Visual-Tactile Sensors for Robotics Manipulation</p>
-                        <p>
-                            We introduce a dataset for external wrench recoverey from visual-tactile sensor images, and an algorithm to estimate the external forces and torques applied to a robotic manipulator equipped with
-                            visual-tactile sensors that combines correspondence matching, classical rendering techniques, and PointNet.
-                        </p>
-                        <a target="_blank" href="file/wrench_est.pdf">[report]</a>
-                        <a target="_blank" href="file/wrench_est_slides.pdf">[slides]</a>
-                    </div>
-                </li>
-
-                <li>
-                    <img src="img/fetus1.jpg">
-                    <div class='proj-intro'>
-                        <p class="intro-title">Inspecting Ultrasound Image of Unborn Fetus by Deep Learning Integrated System</p>
-                        <p>
-                            We design and train a fined-grained image classifier and a object detector(yolov5) to robustly detect 41 different
-body parts of unborn fetus from ultrasound images. A website is deployed for doctors and ultrasound operators to directly interact with the models.
-                        </p>
-                        <a target="_blank" href="http://ddxx56.com:5000/">[website(credentials required)]</a>
-                    </div>
-                </li>
-                <li>
-                    <img src="img/AOSLO.png">
-                    <div class="proj-intro">
-                        <p class="intro-title">
-                            Adaptive Optics-Scanning Laser Ophthalmoscopy Image Analysis Using Deep Learning
-                        </p>
-                        <p>
-                            We present both semantic segmentation and object detection techniques to localize and distinguish between two
-types of photoreceptors from AO-SLO images of human retina. This project later evolved into the <a target="_blank" href="https://opg.optica.org/boe/fulltext.cfm?uri=boe-13-10-5082&id=498617">RC-UPerNet</a>.
-                        </p>
-                        <a target="_blank" href="file/AO-SLO tech report.pdf">[report]</a>
-                        <a target="_blank" href="file/AO-SLO slides.pdf">[slides]</a>
-                    </div>
-                </li>
-
-                <li>
-                    <img src="img/EECS586_matrix_multiply.png">
-                    <div class="proj-intro">
-                        <p class="intro-title">
-                            Multiplying a sequence of matrices
-                        </p>
-                        <p>
-                            Implementation of 2 dynamic programming algorithms for determining the optimal order of multiplying a sequence of matrices introduced by F. Frances Yao's, 1982. They have  O(c^n)  and  O(n^2)  worst-case time complexity respectively.
-                        </p>
-                        <a target="_blank" href="https://drive.google.com/file/d/1_6GaGMiClL7OeNBVSE8xuny9hR9FoLbu/view?usp=sharing">[notebook]</a>
-                        <a target="_blank" href="file/EECS586_slides.pdf">[slides]</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-        <hr/>
-
         <div id="Misc" >
             <h1>
                 Miscellaneous
             </h1>
             <ul>
                 <li>
-                    Languages: Mandarin (native), English (TOEFL MyBest scores 109)
+                    Languages: Mandarin (fluent), English (fluent)
+                </li>
+                <li>
+                    CITI program certification: <a target="_blank" href="file/RCR.pdf">RCR</a>(Biomedical), <a target="_blank" href="file/HSP.pdf">HSP</a>(Biomedical)
                 </li>
                 <li>
                     Hobbies: basketball, badminton, ping-pong, pool, fishing, skateboarding, cooking ...
